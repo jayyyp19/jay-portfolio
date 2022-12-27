@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Noto+Sans+SC:wght@900&display=swap');
+*{
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.main{
+    display: block;
+}
+.navbar{
+    display: flex;
+    padding: 12px;
+    justify-content: space-between;
+}
+.navbar .sm{
+    color: #3a86ff;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 29px;
+    /* flex: 40%; */
+    padding: 5px 0 0 20px;
+}
+.heading{
+    font-size: 36px;
+}
+.navbar nav{
+    padding: 10px;
+}
+.navbar nav a,#menu{
+    font-size: 19px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    padding: 9px 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+#menu,#close{
+    display: none;
+}
+
+/* main section */
+.mainsection{
+    display: flex;
+    padding: 20px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+.mainsection .info{
+    width: 65%;
+    padding: 95px 0 0 150px;
+}
+.mainsection .info h2{
+    color: #0066FF;
+    font-size: 70px;
+    font-family: 'Noto Sans SC', sans-serif;
+    text-shadow:5px 5px 5px #ffd500;
+}
+.mainsection .info h4{
+    font-weight: 600;
+    font-family: 'Libre Baskerville', serif;
+    color: #3a86ff;
+}
+.mainsection .info p{
+    color: #9e2a2b;
+    width: 400px;
+    margin-bottom: 35px;
+}
+.btn{
+    font-size: 14px;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: white;
+    background-color: #0066FF;
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+/* aboutme */
+.aboutme{
+    margin-top: 100px;
+    padding: 50px;
+}
+.aboutme .intro{
+    text-align: center;
+}
+.aboutme .intro h2{
+    font-size: 50px;
+}
+.aboutsection{
+    display: flex;
+    padding: 100px;
+    margin-top: 70px;
+}
+.aboutsection .image{
+    width: 60%;
+    padding: 5px 0 0 10px;
+
+}
+.aboutsection .aboutinfo p{
+    color: #9e2a2b;
+    width: 300px;
+    margin-bottom: 50px;
+}
+.aboutsection .aboutinfo .sinfoall{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.aboutsection .aboutinfo .sinfoall .sinfo{
+    flex: 30%;
+    width: 100px;
+    padding: 0 20px 20px 0;
+    margin: 5px;
+}
+.aboutsection .aboutinfo .sinfoall .sinfo .no{
+    display: block;
+    font-size: 30px;
+    font-weight: 800;
+}
+.aboutsection img{
+    border-radius: 10px;
+}
+.socialicon{
+    text-align: center;
+}
+.socialicon a{
+    margin: 20px;
+}
+
+@media screen and (max-width:1350px) {
+    .mainsection .info{
+        width: 65%;
+        padding: 95px 0 0 60px;
+    }
+}
+@media screen and (max-width:1100px){
+    .aboutsection .image{
+        width: 60%;
+    }
+    .aboutsection{
+        padding: 50px;
+    }
+}
+@media screen  and (max-width:1000px){
+    /* .navbar .sm{
+        flex: 35%;
+    } */
+    .navbar .heading{
+        font-size: 20px;
+    }
+    .navbar nav a{
+        font-size: 15px;
+        margin: 1px;
+    }
+    #close{
+        display: none;
+    }
+    .mainsection .info h2{
+        font-size: 50px;
+    }
+    .mainsection .info{
+        width: 55%;
+        padding: 75px 0 0 20px;
+    }
+    .mainsection img{
+        width: 500px;
+        height: 300px;
+    }
+}
+@media screen  and (max-width:960px){
+    .aboutsection{
+        padding: 10px;
+    }
+}
+@media screen  and (max-width:835px){
+    .mainsection .info{
+        width: 50%;
+        padding: 75px 0 0 10px;
+    }
+    .mainsection .info p{
+        width: 300px;
+    }
+    .aboutsection img{
+        width: 300px;
+        height: 300px;
+    }
+    .aboutsection .aboutinfo .sinfoall .sinfo .no{
+        font-size: 20px;
+    }
+    .aboutsection .aboutinfo .sinfoall .sinfo{
+        width: 80px;
+    }
+    .aboutsection{
+        padding: 0;
+    }
+}
+@media screen  and (max-width:750px){
+    .navbar{
+        display: block;
+        box-shadow: 10px 0 10px black;
+    }
+    .navbar .sm{
+        display: flex;
+        /* flex-wrap: wrap; */
+        justify-content: space-between;
+    }
+    .navbar .heading{
+        /* flex: 70%; */
+        font-size: 23px;
+    }
+    #nav{
+        display: none;
+        /* for hidding navbar */
+    }
+    #nav a{
+        display: block;
+    }
+    #menu{
+        display: block;
+        margin: 0.5px;
+    }
+    .navicon{
+        padding: 10px;
+        margin: 10px;
+    }
+    .navbar button{
+        border: 0;
+        background-color: white;
+    }
+    .mainsection .info{
+        width: 50%;
+        padding: 20px 0 0 10px;
+    }
+    .mainsection .info p{
+        width: 270px;
+    }
+    .mainsection{
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .mainsection img{
+        width: 400px;
+        height: 250px;
+    }
+    .aboutsection img{
+        width: 250px;
+        height: 250px;
+    }
+}
+@media screen  and (max-width:670px){
+    .mainsection{
+        padding: 7px;
+        text-align: center;
+        flex-direction: column-reverse;
+        margin-top: 15px;
+    }
+    .mainsection img{
+        width: 400px;
+        height: 300px;
+    }
+    .mainsection .info{
+        width: 100%;
+    }
+    .mainsection .info p{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mainsection .info h2{
+        font-size: 50px;
+    }
+    .aboutme{
+        text-align: center;
+        margin-top: 50px;
+    }
+    .aboutme .intro h2{
+        font-size: 45px;
+    }
+    .aboutsection{
+        display: block;
+        margin-top: 60px;
+    }
+    .aboutsection .image{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .aboutsection img{
+        width: 290px;
+        height: 290px;
+    }
+    .aboutme .aboutinfo{
+        padding: 20px;
+    }
+    .aboutme .aboutinfo p{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .aboutsection .aboutinfo .sinfoall{
+        padding: 60px;
+        margin-bottom: 15px;
+    }
+}
+@media screen  and (max-width:550px){
+    .aboutsection .aboutinfo .sinfoall{
+        padding: 20px;
+    }
+    .mainsection img{
+        width: 350px;
+        height: 250px;
+    }
+    .mainsection .info h2{
+        font-size: 40px;
+    }
+    .aboutsection img{
+        width: 200px;
+        height: 200px;
+    }
+    .aboutme .intro h2{
+        font-size: 35px;
+    }
+    .aboutsection .aboutinfo p{
+        font-size: 15px;
+        width: 220px;
+    }
+    .mainsection .info p{
+        font-size: 15px;
+        width: 220px;
+    }
+}
+@media screen  and (max-width:370px){
+    .mainsection {
+        padding: 7px;
+    }
+    .mainsection img{
+        width: 300px;
+        height: 200px;
+    }
+    .aboutsection .aboutinfo .sinfoall{
+        padding: 60px;
+        margin-bottom: 5px;
+    }
+    .aboutsection img{
+        width: 195px;
+        height: 195px;
+    }
+    .aboutsection .aboutinfo p{
+        font-size: 15px;
+        width: 190px;
+    margin-bottom: 10px;
+    }
+    .socialicon a{
+      margin: 15px;
+}
+}
